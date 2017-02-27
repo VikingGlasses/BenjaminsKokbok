@@ -1,42 +1,131 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Hallongrottor</title>
-    <link rel="stylesheet" type="text/css" href="../style/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Hallongrottor</title>
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  <link rel="stylesheet" type="text/css" href="../style/recipe.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="content">
-    <header class="row">
-        <img src="assests/resource/#" alt="no img">
-        <h1><a href="../../index.html">Benjamin's Kokbok</a></h1>
-    </header>
+  <header class="row">
+    <img src="../assests/resource/#" alt="no img">
+    <h1><a href="../../index.html">Benjamin's Kokbok</a></h1>
+  </header>
 
-    <nav class="row">
-        <ul class="menu">
-            <li><a href="../../index.html">Hem</a></li>
-            <li class="dropdown">
-                <a class="dropper" href="#">Recept</a>
-                <div class="drop-content">
-                    <a href="#">Mat</a>
-                    <a href="#">Efterrätter</a>
-                    <a href="#">Hallongrottor</a>
-                </div>
-            </li>
-            <li><a href="../../index.html">About</a></li>
-        </ul>
-    </nav>
+  <nav class="row">
+    <ul class="menu">
+      <li><a href="../../index.html">Hem</a></li>
+      <li class="dropdown">
+        <a class="dropper" href="#">Recept</a>
+        <div class="drop-content">
+          <a href="#">Mat</a>
+          <a href="#">Efterrätter</a>
+          <a href="#">Hallongrottor</a>
+        </div>
+      </li>
+      <li><a href="../../index.html">About</a></li>
+    </ul>
+  </nav>
 
-    <main class="row">
-        <aside class="">
+  <main class="row">
 
-        </aside>
-        <article>
+    <aside class="side-content col-3">
 
-        </article>
-    </main>
+      <figure class="small-food-img">
+        <img src="../resource/320px-Hallongrotta.JPG" alt="Missing Image">
+        <figcaption></figcaption>
+      </figure>
+
+      <article>
+        <section class="rating">
+          <label>Betyg</label>
+          <span class="star" id="star-1">&star;</span>
+          <span class="star" id="star-2">&star;</span>
+          <span class="star" id="star-3">&star;</span>
+          <span class="star" id="star-4">&star;</span>
+          <span class="star" id="star-5">&star;</span>
+        </section>
+        <section id="votes">0 Röster (0.0 i betyg)</section>
+        <span></span>
+      </article>
+
+      <article class="ingredients">
+        <section class="potions">
+          <label>Antal satser</label>
+          <input type="number" id="multiplier" min="1" max="10">
+        </section>
+        <section class="ingredients">
+          <h4>Ingredienser</h4>
+          <ul class="list">
+            <!--en sats-->
+            <!--200 g smör-->
+            <!--0.75 dl strösocker-->
+            <!--1.5 tsk vaniljsocker-->
+            <!--1 tsk bakpulver-->
+            <!--0.75 tsk malen kanel-->
+            <!--4.5 dl vetemjöl-->
+            <!--0.75 dl hallonsylt-->
+            <li><span class="amount">200</span> g Smör</li>
+            <li><span class="amount">0.75</span> dl Strösocker</li>
+            <li><span class="amount">1.5</span> tsk Vaniljsocker</li>
+            <li><span class="amount">1</span> tsk Bakpulver</li>
+            <li><span class="amount">0.75</span> tsk Kanel</li>
+            <li><span class="amount">4.5</span> dl Vetemjöl</li>
+            <li><span class="amount">0.75</span> dl Hallonsylt</li>
+          </ul>
+        </section>
+      </article>
+
+    </aside>
+
+    <article class="recipe col-9">
+      <header>
+        <figure class="large-food-img">
+          <img src="../resource/320px-Hallongrotta.JPG" alt="Missing Image">
+          <figcaption></figcaption>
+        </figure>
+
+        <h2>Hallongrottor</h2>
+        <p>
+          Lite ordbajs om hallongrottor
+        </p>
+      </header>
+
+      <!--<section class="ingredients">-->
+      <!--<h4>Ingredienser</h4>-->
+      <!--<ul class="list">-->
+      <!--<li>En ingrediens</li>-->
+      <!--<li>En ingrediens</li>-->
+      <!--<li>En ingrediens</li>-->
+      <!--<li>En ingrediens</li>-->
+      <!--<li>En ingrediens</li>-->
+      <!--</ul>-->
+      <!--</section>-->
+
+      <section class="intructions">
+        <h4>Instuktioner</h4>
+        <ol class="list">
+          <li><p>Ställ ut små bakformar på en plåt. Sätt ugnen på 200°C</p></li>
+          <li><p>Lägg smöret i en bunke och häll på strösocker. Låt det stå framme i rumstemperatur tills
+            smöret blivit rumsvarmt.</p></li>
+          <li><p>Tillsätt vaniljsocker, bakpulver och kanel och vispa till en jämn smet.</p></li>
+          <li><p>Tillsätt vetemjölet och arbeta ihop till en deg.</p></li>
+          <li><p>Rulla till jämn stora bollar och lägg i bakformarna.</p></li>
+          <li><p>Ta ditt finger och tryck på mitten av varje boll så det blir en fördjupning.</p></li>
+          <li><p>Lägg hallonsylt i fördjupningen.</p></li>
+          <li><p>Grädda mitt i ugnen i 200°C i ca 12 minuter.</p></li>
+          <li><p>Låt svalna under bakduk.</p></li>
+        </ol>
+      </section>
+    </article>
+
+  </main>
 </div>
+
+<script type="application/javascript" src="../script/recipe.js"></script>
+<script type="application/javascript" src="../script/rating.js"></script>
 
 </body>
 </html>
