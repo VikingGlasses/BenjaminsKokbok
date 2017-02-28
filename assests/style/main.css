@@ -55,6 +55,11 @@ figure {
 	float: right;
 }
 
+figcaption {
+	font-size: small;
+	text-align: right;
+}
+
 .col-1 {
 	width: 8.33%;
 }
@@ -110,6 +115,21 @@ figure {
 .row::after {
 	clear: both;
 	display: table;
+}
+
+.site-header {
+	position: relative;
+}
+
+.site-header img {
+	max-width: 100%;
+	height: auto;
+}
+
+.site-header h1 {
+	position: absolute;
+	top: 30%;
+	text-shadow: 0px 0px 2px white;
 }
 
 main {
