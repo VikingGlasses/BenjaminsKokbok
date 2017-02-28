@@ -38,47 +38,41 @@
         <figcaption></figcaption>
       </figure>
 
-      <article>
-        <section class="rating row">
-          <label>Betyg</label>
-          <ul class="star-list">
-            <!--comment inbetween li remove their natural 'margin'-->
-            <li><a href="#votes" class="star" id="star-1">&star;</a></li><!--
+      <div class="rating row">
+        <label>Betyg</label>
+        <ul class="star-list">
+          <!--comment inbetween li remove their natural 'margin'-->
+          <li><a href="#votes" class="star" id="star-1">&star;</a></li><!--
             --><li><a href="#votes" class="star" id="star-2">&star;</a></li><!--
             --><li><a href="#votes" class="star" id="star-3">&star;</a></li><!--
             --><li><a href="#votes" class="star" id="star-4">&star;</a></li><!--
             --><li><a href="#votes" class="star" id="star-5">&star;</a></li>
-          </ul>
-        </section>
-        <article id="votes"></article>
-      </article>
+        </ul>
+      </div>
+      <div id="votes"></div>
 
-      <article class="ingredients">
-        <section class="potions">
-          <label>Antal satser</label>
-          <input type="number" id="multiplier" min="1" max="10" value="1" inputmode="numeric">
-        </section>
-        <section class="ingredients">
-          <h4>Ingredienser</h4>
-          <ul class="list">
-            <!--en sats-->
-            <!--200 g smör-->
-            <!--0.75 dl strösocker-->
-            <!--1.5 tsk vaniljsocker-->
-            <!--1 tsk bakpulver-->
-            <!--0.75 tsk malen kanel-->
-            <!--4.5 dl vetemjöl-->
-            <!--0.75 dl hallonsylt-->
-            <li><span class="amount">200</span> g Smör</li>
-            <li><span class="amount">0.75</span> dl Strösocker</li>
-            <li><span class="amount">1.5</span> tsk Vaniljsocker</li>
-            <li><span class="amount">1</span> tsk Bakpulver</li>
-            <li><span class="amount">0.75</span> tsk Kanel</li>
-            <li><span class="amount">4.5</span> dl Vetemjöl</li>
-            <li><span class="amount">0.75</span> dl Hallonsylt</li>
-          </ul>
-        </section>
-      </article>
+      <label>Antal satser</label>
+      <input type="number" id="multiplier" min="1" max="10" value="1">
+      <section class="ingredients">
+        <h4>Ingredienser:</h4>
+        <ul class="list">
+          <!--en sats-->
+          <!--200 g smör-->
+          <!--0.75 dl strösocker-->
+          <!--1.5 tsk vaniljsocker-->
+          <!--1 tsk bakpulver-->
+          <!--0.75 tsk malen kanel-->
+          <!--4.5 dl vetemjöl-->
+          <!--0.75 dl hallonsylt-->
+          <li><span class="amount">200</span> g Smör</li>
+          <li><span class="amount">0.75</span> dl Strösocker</li>
+          <li><span class="amount">1.5</span> tsk Vaniljsocker</li>
+          <li><span class="amount">1</span> tsk Bakpulver</li>
+          <li><span class="amount">0.75</span> tsk Kanel</li>
+          <li><span class="amount">4.5</span> dl Vetemjöl</li>
+          <li><span class="amount">0.75</span> dl Hallonsylt</li>
+        </ul>
+      </section>
 
     </aside>
 
