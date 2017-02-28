@@ -10,9 +10,12 @@ var ingredients = [];
 		ingredients.push(new ingredient(elements[i]));
 		ingredients[i].update(input.value);
 	}
-};
+}
 
 function changeAmount() {
+	if (this.value < 1 || this.value > 10) {
+		this.value = 1;
+	}
 	for (var i = 0; i < ingredients.length; i++) {
 		ingredients[i].update(this.value);
 	}
