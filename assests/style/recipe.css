@@ -35,7 +35,7 @@
 .ingredients li {
 	margin-left: 2px;
 	border-bottom: 1px solid #ccc;
-	width: 175px;
+	width: 100%;
 }
 
 .intructions li {
@@ -44,4 +44,30 @@
 
 #multiplier {
 	width: 50px;
+}
+
+ul.star-list {
+	list-style: none;
+	display: inline-block;
+	margin: auto;
+}
+
+ul.star-list li {
+	display: inline;
+}
+
+a.star {
+	display: inline;
+	color: gold;
+	text-decoration: none;
+	max-font-size: 1.5em;
+	min-font-size: 1.4em;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 0px black;
+	padding: 0px 2px;
+}
+
+#votes {
+	font-size: x-small;
+	text-align: center;
 }
