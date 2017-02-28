@@ -7,7 +7,6 @@ var recipe = "hallongrotta";
 var votesElement = document.getElementById("votes");
 var starElements = document.getElementsByClassName("star");
 // TODO spara användarens rating lokalt
-// TODO sätt firsta rating till serverns om användaren inte har röstat
 var rating = 0;
 
 
@@ -24,7 +23,7 @@ window.onload = function() {
 
 function clickedStar() {
 	rating = eval(this.id.substring(this.id.length - 1));
-	//vote(recipe, rating);
+	vote(recipe, rating);
 	getRating(recipe);
 }
 
@@ -52,8 +51,12 @@ function mouseLeftStar() {
 }
 
 function setVotes(obj) {
-	var str = obj.votes + " Röster (" + obj.rating + " i betyg)";
+	var str = obj.votes + " Röster (" + obj.rating.toFixed(2) + " i betyg)";
 	votesElement.innerHTML = str;
+	if (rating === 0) {
+		rating = obj.rating.toFixed(0);
+		mouseLeftStar();
+	}
 }
 
 function vote(recipe, rating) {
