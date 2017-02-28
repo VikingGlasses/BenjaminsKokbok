@@ -39,22 +39,24 @@
       </figure>
 
       <article>
-        <section class="rating">
+        <section class="rating row">
           <label>Betyg</label>
-          <span class="star" id="star-1">&star;</span>
-          <span class="star" id="star-2">&star;</span>
-          <span class="star" id="star-3">&star;</span>
-          <span class="star" id="star-4">&star;</span>
-          <span class="star" id="star-5">&star;</span>
+          <ul class="star-list">
+            <!--comment inbetween li remove their natural 'margin'-->
+            <li><a href="#votes" class="star" id="star-1">&star;</a></li><!--
+            --><li><a href="#votes" class="star" id="star-2">&star;</a></li><!--
+            --><li><a href="#votes" class="star" id="star-3">&star;</a></li><!--
+            --><li><a href="#votes" class="star" id="star-4">&star;</a></li><!--
+            --><li><a href="#votes" class="star" id="star-5">&star;</a></li>
+          </ul>
         </section>
-        <section id="votes">0 Röster (0.0 i betyg)</section>
-        <span></span>
+        <article id="votes"></article>
       </article>
 
       <article class="ingredients">
         <section class="potions">
           <label>Antal satser</label>
-          <input type="number" id="multiplier" min="1" max="10">
+          <input type="number" id="multiplier" min="1" max="10" value="1" inputmode="numeric">
         </section>
         <section class="ingredients">
           <h4>Ingredienser</h4>
@@ -89,6 +91,7 @@
 
         <h2>Hallongrottor</h2>
         <p>
+          <!--TODO write something-->
           Lite ordbajs om hallongrottor
         </p>
       </header>
